@@ -1,0 +1,75 @@
+:root {
+  --color-1: #d0d2fd;
+  /* màu nền */
+  --color-4: #b2b9c5;
+  /*màu nền tối */
+  --color-2: white;
+  --color-3: black;
+}
+
+.bg-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+.form-log-res {
+  position: fixed;
+  padding: 2rem;
+  top: 5rem;
+  left: 28rem;
+  width: 35rem;
+  text-align: center;
+  background-color: var(--color-2);
+  border-radius: 20px;
+}
+
+.form-title {
+  box-sizing: border-box !important;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 750ms;
+  border-bottom: 1px solid transparent;
+}
+
+.form-title:hover,
+.form-title.active {
+  border-bottom: 1px solid var(--color-3);
+  transition: all 750ms;
+}
+
+.form-input {
+  width: 80%;
+  margin: 1rem;
+  padding: 0 0.5rem;
+  display: block;
+  color: var(--color-3);
+  background-color: var(--color-2);
+  border: none;
+  border-bottom: 2px solid var(--color-3);
+}
+
+.form-input::placeholder {
+  color: var(--color-3);
+}
+
+.form-submit {
+  margin: 1rem 3rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--color-2);
+  border: 1px solid var(--color-3);
+  border-radius: 15px;
+  transition: all 750ms;
+}
+
+.form-submit:hover {
+  background-color: var(--color-1);
+  border-color: var(--color-1);
+  transition: all 750ms;
+}

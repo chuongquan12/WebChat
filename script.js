@@ -45,5 +45,20 @@ $(document).ready(function () {
         $("#content").load("list-group.html"); 
         $("#content").show(500);
     });
+
+    // Login
+    $("#login").click(function (e) { 
+        $("#form-login").show(500);
+        $("#form-register").hide(500);
+        $(".form-title").removeClass("active");
+        $(this).addClass("active");    
+    });
+
+    $("#register").click(function (e) { 
+        $("#form-register").show(500);
+        $("#form-login").hide(500);
+        $(".form-title").removeClass("active");
+        $(this).addClass("active");    
+    });
     
 });

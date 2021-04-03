@@ -6,7 +6,9 @@
   --color-2: white;
   --color-3: black;
 }
-
+body {
+  height: 100vh;
+}
 @font-face {
   src: url(font/Comfortaa-VariableFont_wght.ttf);
   font-family: Comfortaa;
