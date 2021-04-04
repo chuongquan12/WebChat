@@ -45,7 +45,7 @@
 
 /* Chat Box Title */
 .chat-box__title {
-  height: 12.5%;
+  height: 12.5vh;
   background-color: var(--color-1);
   border-bottom: 2px solid var(--color-2);
 }
@@ -115,7 +115,7 @@
 
 /* Chat Box Send */
 .chat-box__send {
-  height: 15%;
+  height: 15vh;
   background-color: var(--color-1);
   border-top: 2px solid var(--color-2);
 }
@@ -153,4 +153,39 @@
 .chat-box__send--btn:hover {
   background-color: var(--color-1);
   transition: all 750ms;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+
+  .chat-box__icon-bell {
+    display: inline-block !important;
+    position: fixed;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-2);
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    transition: all 750ms;
+  }
+
+  .chat-box__icon-bell:hover {
+    background-color: var(--color-1);
+    transition: all 750ms;
+  }
+
+  .chat-box__icon-bell-count {
+    display: inline-block !important;
+    position: fixed;
+    padding: 0.25rem;
+    font-size: 0.6rem;
+    top: 3.25rem;
+    right: 0.75rem;
+    color: var(--color-3);
+    background-color: var(--color-1);
+    border: 1px solid var(--color-2);
+    border-radius: 50%;
+  }
 }

@@ -1,6 +1,22 @@
 <link rel="stylesheet" href="css/contacts.css" />
 <script>
   $(document).ready(function () {
+    // Notification
+
+    $(".notification").click(function (e) {
+      $(".user__case--item").removeClass("active");
+      $("#mess").addClass("active");
+
+      $("#content").hide(0);
+      $("#tabs-list").hide(0);
+
+      $("#content").load("content-mess.html");
+      $("#tabs-list").load("mess.html");
+
+      $("#content").show(500);
+      $("#tabs-list").show(500);
+    });
+
     // Case Contacts
 
     $("#add-friends").click(function (e) {
@@ -29,22 +45,32 @@
       $("#content").load("content-list-group.html");
       $("#content").show(750);
     });
+
+    // Close
+
+    $(".icon-close").click(function (e) {
+      $(".content").hide(500);
+    });
   });
 </script>
 <div class="col">
   <div class="row justify-content-center">
     <span class="tabs-contact__item active" id="add-friends">
-      <i class="fas fa-user-plus"></i> Danh sách kết bạn
+      <i class="fas fa-user-plus"></i> Lời mời kết bạn
     </span>
   </div>
   <div class="row justify-content-center">
     <span class="tabs-contact__item" id="friends">
-      <i class="fas fa-user-friends"></i> Danh sách bạn bè
+      <i class="fas fa-user-friends"></i> Bạn bè
     </span>
   </div>
   <div class="row justify-content-center">
     <span class="tabs-contact__item" id="group">
-      <i class="fas fa-users"></i> Danh sách nhóm
+      <i class="fas fa-users"></i> Nhóm chat
     </span>
   </div>
+</div>
+<div class="notification">
+  <i class="far fa-comment-dots notification__icon"></i>
+  <span class="notification__count">25</span>
 </div>

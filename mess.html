@@ -1,4 +1,17 @@
 <link rel="stylesheet" href="css/home.css" />
+<script>
+  $(document).ready(function () {
+    // // Home Responsive
+
+    $(".tabs-card__item").click(function (e) {
+      $(".content").show(500);
+    });
+
+    $(".icon-close").click(function (e) {
+      $(".content").hide(500);
+    });
+  });
+</script>
 <div class="col">
   <div class="row tabs-card__item align-items-center active">
     <div class="col-md-3 col-4">

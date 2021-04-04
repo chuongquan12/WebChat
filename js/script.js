@@ -24,6 +24,7 @@ $(document).ready(function () {
 
     });
 
+
     // Contacts
     $("#contacts").click(function (e) { 
         $(".user__case--item").removeClass("active");
@@ -50,15 +51,7 @@ $(document).ready(function () {
         $(".overlay").hide(500);
     });
 
-    // // Home Responsive
 
-    $(".tabs-card__item").click(function (e) {
-        $(".chat-box").show(500);
-    });
-
-    $(".chat-box__icon-close").click(function (e) { 
-        $(".chat-box").hide(500);
-    });
 
 
     // Login
