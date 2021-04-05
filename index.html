@@ -104,6 +104,141 @@
         </span>
       </div>
     </div>
+    <div class="add-friend" id="add-friend-content">
+      <div class="col">
+        <div class="row justify-content-between">
+          <span> <i class="fas fa-user-plus"></i> Thêm bạn bè: </span>
+          <span>
+            <i
+              class="fas fa-times"
+              style="font-size: 1.2rem; cursor: pointer"
+            ></i>
+          </span>
+        </div>
+        <hr />
+        <form action="">
+          <div class="row justify-content-center">
+            <input
+              type="text"
+              class="add-friend__input"
+              placeholder="Số điện thoại hoặc ID"
+              name="add-friend-ip"
+              id="add-friend-ip"
+            />
+            <button type="submit" class="add-friend__submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <br />
+        <div class="row add-friends__card" id="add-friends__card">
+          <div class="col">
+            <div class="row justify-content-center">
+              <img
+                src="img/1597490497blobid0.jpg"
+                alt=""
+                class="img-fluid add-friend__card--img"
+              />
+            </div>
+            <div class="row justify-content-center">
+              <span class="add-friend__card--title"> #212 </span>
+            </div>
+            <div class="row justify-content-center">
+              <span class="add-friend__card--title"> Tên bạn bè </span>
+            </div>
+            <div class="row justify-content-center">
+              <span class="add-friend__card--title"> 0924668320 </span>
+            </div>
+            <div class="row justify-content-center">
+              <span class="add-friend__card--icon"> Gửi lời mời </span>
+              <span class="add-friend__card--icon"> Hủy </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="setting" id="setting-content">
+      <div class="col">
+        <div class="row justify-content-between">
+          <span> <i class="fas fa-cog"></i> Chỉnh sửa thông tin: </span>
+          <span>
+            <i
+              class="fas fa-times"
+              style="font-size: 1.2rem; cursor: pointer"
+            ></i>
+          </span>
+        </div>
+        <div class="row">
+          <span></span>
+        </div>
+        <form action="">
+          <div class="row justify-content-center">
+            <input
+              type="text"
+              class="add-friend__input edit-input"
+              placeholder="Họ và tên"
+              name="name"
+              id="name"
+              value="Chương Quân"
+              disabled
+            />
+          </div>
+          <div class="row justify-content-end">
+            <span class="edit-user__card--icon" id="edit-user">
+              <i class="fas fa-edit"></i> Chỉnh sửa
+            </span>
+            <button
+              class="add-friend__card--icon"
+              id="save-edit-user"
+              style="display: none"
+            >
+              <i class="fas fa-save"></i> Lưu
+            </button>
+          </div>
+        </form>
+        <hr />
+        <div class="row justify-content-between">
+          <span> <i class="fas fa-key"></i> Đổi mật khẩu: </span>
+        </div>
+        <div class="row">
+          <span></span>
+        </div>
+        <form action="">
+          <div class="row justify-content-center">
+            <input
+              type="password"
+              class="add-friend__input"
+              placeholder="Mật khẩu cũ"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <input
+              type="password"
+              class="add-friend__input"
+              placeholder="Mật khẩu mới"
+              name="new-password"
+              id="new-password"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <input
+              type="password"
+              class="add-friend__input"
+              placeholder="Xác nhận mật khẩu"
+              name="re-password"
+              id="re-password"
+            />
+          </div>
+          <div class="row justify-content-end">
+            <button type="submit" class="add-friend__card--icon">
+              <i class="fas fa-save"></i> Lưu
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script
       src="https://kit.fontawesome.com/194e38739f.js"
       crossorigin="anonymous"
