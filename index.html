@@ -99,9 +99,9 @@
         </span>
       </div>
       <div class="row justify-content-center">
-        <span class="user__case--item" id="logout">
+        <a href="logout" class="user__case--item" id="logout">
           <i class="fas fa-sign-out-alt"></i> Đăng xuất
-        </span>
+        </a>
       </div>
     </div>
     <div class="add-friend" id="add-friend-content">
@@ -171,18 +171,19 @@
         <div class="row">
           <span></span>
         </div>
-        <form action="">
+        <form action="" method="POST">
           <div class="row justify-content-center">
             <input
               type="text"
               class="add-friend__input edit-input"
               placeholder="Họ và tên"
               name="name"
-              id="name"
+              id="edit-name"
               value="Chương Quân"
               disabled
             />
           </div>
+          <div class="row error" id="edit-name-err"></div>
           <div class="row justify-content-end">
             <span class="edit-user__card--icon" id="edit-user">
               <i class="fas fa-edit"></i> Chỉnh sửa
@@ -200,39 +201,47 @@
         <div class="row justify-content-between">
           <span> <i class="fas fa-key"></i> Đổi mật khẩu: </span>
         </div>
-        <div class="row">
-          <span></span>
-        </div>
+
         <form action="">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center align-items-center">
             <input
               type="password"
               class="add-friend__input"
               placeholder="Mật khẩu cũ"
               name="password"
-              id="password"
+              id="edit-password"
             />
           </div>
+          <div class="row error" id="edit-password-err"></div>
+
           <div class="row justify-content-center">
             <input
               type="password"
               class="add-friend__input"
               placeholder="Mật khẩu mới"
               name="new-password"
-              id="new-password"
+              id="edit-new-password"
             />
           </div>
+          <div class="row error" id="edit-new-password-err"></div>
+
           <div class="row justify-content-center">
             <input
               type="password"
               class="add-friend__input"
               placeholder="Xác nhận mật khẩu"
               name="re-password"
-              id="re-password"
+              id="edit-re-password"
             />
           </div>
+          <div class="row error" id="edit-re-password-err"></div>
+
           <div class="row justify-content-end">
-            <button type="submit" class="add-friend__card--icon">
+            <button
+              type="submit"
+              class="add-friend__card--icon"
+              id="save-change-password"
+            >
               <i class="fas fa-save"></i> Lưu
             </button>
           </div>

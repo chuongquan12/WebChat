@@ -46,6 +46,14 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.error {
+  margin: 0 2.5rem;
+  width: 80%;
+  color: red;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
 .container-fluid {
   height: 100vh;
 }
@@ -181,6 +189,7 @@ button:focus {
   padding: 0.75rem 2.5rem;
   margin: 0.5rem 0;
   border: 1px solid var(--color-2);
+  color: var(--color-3);
   background-color: var(--color-2);
   border-radius: 15px;
   transition: all 750ms;
@@ -189,6 +198,8 @@ button:focus {
 
 .user__case--item:hover,
 .user__case--item.active {
+  text-decoration: none;
+  color: var(--color-3);
   background-color: var(--color-1);
   transition: all 750ms;
 }
@@ -338,7 +349,6 @@ button:focus {
   top: 10vh;
   left: 35vw;
   right: 35vw;
-  bottom: 20vh;
   background-color: var(--color-2);
   border: 2px solid var(--color-1);
   border-radius: 20px;
